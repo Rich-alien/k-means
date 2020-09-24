@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {run} from './main/main';
+import {Layer, Stage, Text} from "react-konva";
+import {tick} from "./main/draw/draw";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+    componentDidMount() {
+        run()
+    }
+
+    DrawThePoints = () => {
+        tick();
+    }
+
+    render() {
+        return (
+            <div id="App">
+                <Stage width={window.innerWidth} height={window.innerHeight}>
+                    <Layer>
+                        <Text text="1 секундочку"/>
+                        {
+                            this.DrawThePoints
+                        }
+                    </Layer>
+                </Stage>
+            </div>
+        );
+    }
 }
 
 export default App;
