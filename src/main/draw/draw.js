@@ -4,7 +4,7 @@ import {AfterNormalizeData, cluster} from "../data";
 import {Layer, Rect, Stage} from "react-konva";
 import style from '../draw.module.css'
 // import {move} from "../Evklid/Evklid";
-
+//отрисовка объектов
 export function tick() {
     const element = (
         <div className={style.container}>
