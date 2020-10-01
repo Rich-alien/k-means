@@ -2,6 +2,7 @@ import {City, cluster, clustersNum, Color, data} from "./data";
 // import {getRandomFloat} from "./GetRandom/GetRandomFloat";
 
 let newObj = {};
+//кластер
 export let claster = () => {
     for (let i = 0; i < clustersNum ; i++) {
         newObj = {};
