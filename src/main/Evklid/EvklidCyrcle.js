@@ -1,7 +1,7 @@
 import {AfterNormalizeData, cluster, operationDistant} from "../data";
 import {evklid} from "./Evklid";
 import {Min} from "../minimalEl";
-
+//евклид
 export let EvklidCyrcle = () => {
     let distant;
     for (let i = 0; i < AfterNormalizeData.length; i++) {
