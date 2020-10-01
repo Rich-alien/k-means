@@ -1,3 +1,4 @@
+// data
 export let clustersNum = 3;
 export let PARAM = 0.00001;
 export let data = [];
