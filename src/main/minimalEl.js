@@ -1,5 +1,5 @@
 import {cluster, FilterOperationDistant, operationDistant} from "./data";
-
+//минимальный эллемент
 export let Min = () => {
     for (let i = cluster.length; i < operationDistant.length; i += cluster.length) {
 
