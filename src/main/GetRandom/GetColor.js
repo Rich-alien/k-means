@@ -2,7 +2,7 @@
 // import {City} from "../data";
 import {data} from "../data";
 
-
+//цвета
 export let getColor = () => {
     for (let i = 0; i < data.length; i++) {
         switch (data[i].city){
