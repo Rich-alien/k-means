@@ -8,7 +8,7 @@ class App extends React.Component {
     componentDidMount() {
         run()
     }
-
+// функция отрисовки
     DrawThePoints = () => {
         tick();
     }
