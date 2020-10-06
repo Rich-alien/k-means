@@ -6,6 +6,7 @@ export let getNormalXY = () => {
 
         NormalizeData = {};
         NormalizeData = {
+            id: data[i].id,
             x: ((data[i].x - 0.1) / (1 - 0.1)) *700,
             y: ((data[i].y - 0.1) / (300 - 1))*700,
             city: data[i].city,
