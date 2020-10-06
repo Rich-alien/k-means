@@ -7,6 +7,7 @@ export let createNewData = () => {
         let RandomNumber = getRandomInt(3);
         let newObj = {};
         newObj = {
+            id: i,
             x: getRandomFloat(),
             y: getRandomInt(300),
             city: City[RandomNumber],
