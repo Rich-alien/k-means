@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import {AfterNormalizeData, cluster} from "../data";
 import {Layer, Rect, Stage} from "react-konva";
 import style from '../draw.module.css'
+import {EvklidPodshet} from "../Evklid/EvklidPodschet";
+import {EvklidCyrcle} from "../Evklid/EvklidCyrcle";
+import {SearchError} from "../Evklid/SearchError";
+import {SearchErrorMan} from "../Manhetan/SearchErrorMan";
 // import {move} from "../Evklid/Evklid";
 //отрисовка объектов
 export function tick() {
@@ -33,8 +37,19 @@ export function tick() {
                             shadowBlur={5}
                         />
                     ))}
+                    {
+
+                    }
+
                 </Layer>
+
             </Stage>
+            <button onClick={ ()=>{SearchError()}}>
+                Evklid
+            </button>
+            <button onClick={ ()=>{SearchErrorMan()}}>
+                Manhetan
+            </button>
         </div>
     );
     ReactDOM.render(element, document.getElementById('root'));
