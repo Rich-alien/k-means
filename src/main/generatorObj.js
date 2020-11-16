@@ -24,7 +24,6 @@ export let createNewData = () => {
             data[i].city = 'Чепаевск';
             data[i].color = 'green';
         } else {
-            console.log(data[i]);
             data[i].city = 'Самара';
             data[i].color = 'purple';
         }
