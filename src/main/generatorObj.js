@@ -1,18 +1,33 @@
-import {City, Color, data, quantity} from './data';
+import {data, quantity} from './data';
 import {getRandomInt} from './GetRandom/GetRandomInt'
-import {getRandomFloat} from './GetRandom/GetRandomFloat'
 //генерация объектов
 export let createNewData = () => {
     for (let i = 0; i < quantity; i++) {
-        let RandomNumber = getRandomInt(3);
         let newObj = {};
         newObj = {
             id: i,
-            x: getRandomFloat(),
+            x: Math.random() ,
             y: getRandomInt(300),
-            city: City[RandomNumber],
-            color: Color[RandomNumber],
+            city: null,
+            color: null,
         }
+
         data.push(newObj)
+
     }
+    for (let i = 0; i < data.length; i++) {
+
+        if (data[i].x >= 0 && data[i].x <= 1 && data[i].y <= 150) {
+            data[i].city = 'Тольятти';
+            data[i].color = 'black';
+        } else if (data[i].y >= 150 && data[i].x >= 0.5 && data[i].x <= 1) {
+            data[i].city = 'Чепаевск';
+            data[i].color = 'green';
+        } else {
+            console.log(data[i]);
+            data[i].city = 'Самара';
+            data[i].color = 'purple';
+        }
+    }
+
 }
