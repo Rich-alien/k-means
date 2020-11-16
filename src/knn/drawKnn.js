@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Layer, Rect, Stage} from "react-konva";
 import style from './draw.module.css'
-import {saveData} from "../main/data";
+import {saveData, VoidPoints} from "../main/data";
+import {generateVoidPoints} from "./generateVoidPoints";
 // import {move} from "../Evklid/Evklid";
 //отрисовка объектов
 export function knnPoints() {
@@ -24,22 +25,23 @@ export function knnPoints() {
                                 fill={d.color}
                             />
                         ))}
-                    {/*{cluster.map(d => (<Rect*/}
-                    {/*        x={d.x}*/}
-                    {/*        y={d.y}*/}
-                    {/*        width={10}*/}
-                    {/*        height={10}*/}
-                    {/*        fill={'red'}*/}
-                    {/*        shadowBlur={5}*/}
-                    {/*    />*/}
-                    {/*))}*/}
-                    {
+                    {VoidPoints.map(d => (<Rect
+                            x={d.x}
+                            y={d.y}
+                            width={10}
+                            height={10}
+                            fill={'red'}
+                            shadowBlur={5}
+                        />
+                    ))}
 
-                    }
 
                 </Layer>
 
             </Stage>
+            <button onClick={generateVoidPoints}>
+                Генерация пустых точек
+            </button>
             {/*<button onClick={ ()=>{SearchError()}}>*/}
             {/*    Evklid*/}
             {/*</button>*/}
