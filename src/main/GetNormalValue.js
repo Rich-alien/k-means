@@ -1,4 +1,4 @@
-import {data, AfterNormalizeData, Color} from './data'
+import {data, AfterNormalizeData} from './data'
 
 let NormalizeData = {};
 export let getNormalXY = () => {
