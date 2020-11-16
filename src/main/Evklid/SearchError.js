@@ -1,6 +1,6 @@
 //будет кртиться шарманка до n момента
 import {EvklidCyrcle} from "./EvklidCyrcle";
-import {cluster, FilterOperationDistant, operationDistant} from "../data";
+import { FilterOperationDistant, operationDistant} from "../data";
 
 export let SearchError = () => {
         EvklidCyrcle();
