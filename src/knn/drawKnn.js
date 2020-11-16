@@ -4,8 +4,7 @@ import {Layer, Rect, Stage} from "react-konva";
 import style from './draw.module.css'
 import {saveData, VoidPoints} from "../main/data";
 import {generateVoidPoints} from "./generateVoidPoints";
-// import {move} from "../Evklid/Evklid";
-//отрисовка объектов
+import {monRun} from "./monhetan";
 export function knnPoints() {
     const element = (
         <div className={style.container}>
@@ -15,8 +14,7 @@ export function knnPoints() {
                     {/*    EvklidCyrcle()*/}
                     {/*}*/}
                     {
-
-                       saveData.map(d => (
+                        saveData.map(d => (
                             <Rect
                                 x={d.x}
                                 y={d.y}
@@ -42,6 +40,11 @@ export function knnPoints() {
             <button onClick={generateVoidPoints}>
                 Генерация пустых точек
             </button>
+            <button onClick={monRun}>
+                mon
+            </button>
+            >
+            {/*monRun*/}
             {/*<button onClick={ ()=>{SearchError()}}>*/}
             {/*    Evklid*/}
             {/*</button>*/}
