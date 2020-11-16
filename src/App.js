@@ -2,17 +2,20 @@ import React from 'react';
 import './App.css';
 import {run} from './main/main';
 import {Layer, Stage, Text} from "react-konva";
-import {tick} from "./main/draw/draw";
+import {knnPoints} from "./knn/drawKnn";
 
 class App extends React.Component {
     componentDidMount() {
         run()
     }
 // функция отрисовки
+//     DrawThePoints = () => {
+//         tick();
+//     }
+// отрисовка knn
     DrawThePoints = () => {
-        tick();
-    }
-
+        knnPoints();
+     }
     render() {
         return (
             <div id="App">
