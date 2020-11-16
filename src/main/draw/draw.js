@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import {AfterNormalizeData, cluster} from "../data";
 import {Layer, Rect, Stage} from "react-konva";
 import style from '../draw.module.css'
-import {EvklidPodshet} from "../Evklid/EvklidPodschet";
-import {EvklidCyrcle} from "../Evklid/EvklidCyrcle";
 import {SearchError} from "../Evklid/SearchError";
 import {SearchErrorMan} from "../Manhetan/SearchErrorMan";
 // import {move} from "../Evklid/Evklid";
