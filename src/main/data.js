@@ -12,6 +12,7 @@ export let FilterOperationDistantMan = [];
 export let Color = ['green', 'purple', 'black'];
 export let quantity = 100;
 export let TimeSet1Sec = [];
+export let VoidPoints =[];
 export let saveData = [
     {id: 0, x: 28.509279445729035, y: 341.571906354515, city: "Тольятти", color: "black"},
     {id: 1, x: 0.022111416550387362, y: 575.685618729097, city: "Самара", color: "purple"},
