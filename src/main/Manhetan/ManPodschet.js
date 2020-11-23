@@ -38,13 +38,6 @@ export let ManPodshet = () => {
         A =
             {x: (clusterAX / colmCluseterA), y: (clusterAY / colmCluseterA), city: "Чапаевск"};
 
-    cluster.push(C);
-    cluster.push(B);
-    cluster.push(A);
-    console.log("-----------------------");
-    console.log(C);
-    console.log(B);
-    console.log(A);
     clusterAX = 0;
     clusterBX = 0;
     clusterCX = 0;
