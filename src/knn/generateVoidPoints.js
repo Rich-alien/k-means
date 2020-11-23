@@ -7,6 +7,7 @@ export const generateVoidPoints = () => {
         for (let i = 0; i < 5; i++) {
             click++;
             newVoid = {
+                id: i,
                 x: saveData[i + Math.floor(Math.random() * Math.floor(70))].x,
                 y: saveData[i + Math.floor(Math.random() * Math.floor(70))].y,
                 city: getRandomCity(),
